@@ -1,9 +1,7 @@
 body{
     font-family: 'Poppins',sans-serif;
     background-color: rgb(224, 224, 224);
-    margin-top: 100px;
-    margin-left:120px;
-    
+    margin-top: 100px;    
 }
 .hd h3{
     font-size: 225%;
@@ -37,17 +35,16 @@ h4{
     text-decoration: none;
     border-radius: 40px;
 }
-.cover{
-    margin-top: -25%;
+.banner.cover{
     position: relative;
     left: 55%;
 }
 .boxx{
     color: lightslategray;
 }
-.card1{
+.container1{
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: center;
     width: 100%;
 }
@@ -81,16 +78,25 @@ h4{
     position: relative;
     margin: 10px;
 }
-p{
+.see{
     color: crimson;
+    text-decoration: none;
     position: relative;
-    right: -85%;
+    left: 82%;
+}
+.container4{
+    position: relative;
+    margin-top: 70px;
 }
 li{
     list-style: none;
 }
 ul{
     display: flex;
+    justify-content: space-between;
+    width: 5%;
+    padding-bottom: 1%;
+
 }
 .com{
     padding-top:40px;
@@ -98,16 +104,16 @@ ul{
     color: whitesmoke;
     text-align: center;
 }
-footer{
-    position: relative;
-    width: auto;
-    height: 250px;
-    background-color: black;
+
+.inner-footer{
+    justify-content: space-evenly;
 }
+
 .slinks{
     color: whitesmoke;
     position: relative;
     left: 45%;
+    justify-content: space-around;
     text-align: center;
 }
 .bo{
@@ -133,14 +139,55 @@ footer{
     width:70%;
 }
 .banner{
-    display: grid;
+    display: flex;
+    position: relative;
+    padding-left: 140px;
     grid-template-columns: 1fr 1fr;
+}
+footer{
+    padding: 0px;
+    box-sizing: border-box;
+     width: auto;
+}
+.con{
+    background-color: black;
+    margin: auto;
+}
+.foot{
+    height: 150px;
+}
+.box1:hover{
+    transform: scale(1.2);
+}
+.cover:hover{
+    transform: scale(1.2);
+}
+.naam:hover{
+transform: scale(1.2);
+}
+.half-wid:hover{
+    transform: scale(1.2);
 }
 
 
 /* ----My Resposive Area---- */
 
 @media(max-width:1170px){
+    .first-section{
+        flex-direction: column;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .card2{
+        flex-direction: column;
+    }
+    .card3{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+    }
     .bod.card1.card2.card3{
         display: grid;
         grid-template-columns: repeat(1,1fr);
@@ -148,4 +195,4 @@ footer{
     .banner{
         grid-template-columns: repeat(1,1fr);
     }
-}    
+}  
